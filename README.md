@@ -40,7 +40,7 @@ The split follows the usual workflow / agent distinction: a **workflow** runs an
 - **Reads the UI tree, not screenshots.** No vision model. Text entry uses accessibility `set_text`; no secure setting is changed. The only thing installed on the phone is the small glow helper app (see below).
 - **Spotify:** `spotify_play` opens a `spotify:search:` deep link and taps only an exact title + artist row. If nothing matches exactly it asks aloud "Did you mean <song> by <artist>?" (yes plays it, no cancels, anything else is a new search; at most 3 rounds). Spotify is a private app: no LLM and no screenshots, only result titles are read.
 - **Run logs:** every run writes a log under `logs/` (gitignored) with stage timings and the label of the tapped element only. Screenshots can show real phone content, so `logs/` is never published.
-- **Planners:** [Jev](https://typesafe.ai) (typed-decision model via OpenRouter) picks choices from options we give it; Groq `openai/gpt-oss-120b` (reasoning `low`) fills in free text and takes over when Jev is unsure or not moving the screen. If Groq fails twice, Jev's best guess is used instead of ending the run.
+- **Planners:** [Jev](https://typesafe.ai) (typed-decision model via OpenRouter) picks from a list of options I give it; Groq `openai/gpt-oss-120b` (reasoning `low`) fills in free text and takes over when Jev is unsure or not moving the screen. If Groq fails twice, Jev's best guess is used instead of ending the run.
 - **One Gnani request at a time** (the account allows one active request): a lock plus 0.5 / 1 / 2 s backoff on 429. TTS audio is cached on disk, so fixed phrases cost nothing after the first run.
 
 ## Guardrails
@@ -59,11 +59,11 @@ All checks are deterministic code, so the LLM's own flag is never the only guard
 | Limits | 25-step hard cap with progress checkpoints, loop detector (also A/B/A/B), blank or secure screen stops the run. |
 | No Shorts | YouTube Shorts are skipped unless asked for. |
 
-**Demo note:** the Bluetooth scene in the demo video was recorded with Settings temporarily added to the allowlist (the video says "Settings allowed for this demo"). That change is reverted in this repo: Settings is private again, so the agent will not drive it.
+About the demo video: I recorded the Bluetooth scene with Settings temporarily added to the allowlist (the video says "Settings allowed for this demo"). I reverted that before publishing, so in this repo Settings is private again and the agent won't drive it.
 
-## Phone-side helper: screen-edge glow (disclosure)
+## Glow overlay (the one app installed on the phone)
 
-`android/glow` is a tiny Java app (about one overlay service, no network, no data access) that draws a coloured glow around the screen edge so a viewer can see the agent's state: listening, thinking, acting, done, blocked. It is **optional**: `GLOW=0` turns it off and the agent works the same. It needs the "display over other apps" permission, granted by hand. Source is in the repo; `scripts/build_glow.sh` builds it with plain SDK tools (no Gradle), and the debug keystore is generated locally and gitignored. `src/glow.py` drives it. After a phone reboot, start it again: `adb shell am start -n com.gnani.glow/.MainActivity`.
+`android/glow` is a tiny Java app (one overlay service, no network, no data access). It draws a coloured glow around the screen edge so you can see what the agent is doing: listening, thinking, acting, done, blocked. It's optional: `GLOW=0` turns it off and everything else works the same. It needs the "display over other apps" permission, granted by hand. Source is in the repo; `scripts/build_glow.sh` builds it with plain SDK tools (no Gradle), and the debug keystore is generated locally and gitignored. `src/glow.py` drives it. After a phone reboot, start it again: `adb shell am start -n com.gnani.glow/.MainActivity`.
 
 ## Setup
 
@@ -92,14 +92,14 @@ Other flags: `--agent` (skip the router), `--narrate` (speak every step), `--dev
 
 Live taps that send, call or pay are disabled in this build (`safety.COMMIT_TAPS = False`), so `--dry-run` and the normal mode behave the same at those steps.
 
-## Results (read this before trusting any number)
+## Results
 
 Full eval, 2026-11-09 (`eval/results_nov9.md`): Jev + Groq `gpt-oss-120b` (reasoning low). Input: 24 clips recorded by me (12 commands × Telugu / Hindi), transcribed once by Gnani Prisma, each transcript replayed 3× on the real phone. Success is checked on the live screen after the run. Dry-run for alarm / timer / call / message commits. Speech mishears count as failures.
 
 - **52/72 (72%)**, median **8.0 s** per task. The unmodified run scored **49/72 (68%)**: one test check was wrong for "play ..." commands (they now open the video, the check expected the results page). That task was re-run alone after fixing the check: 4/6 (`eval/results_nov9_yt.md`).
-- Split (unmodified run): **workflows + guardrail blocks 46/57 (81%)**, median 6.5 s; **LLM agent 3/15 (20%)**, median 22.2 s. The agent is the weak part.
+- Split (unmodified run): **workflows + guardrail blocks 46/57 (81%)**, median 6.5 s; **LLM agent 3/15 (20%)**, median 22.2 s. The agent is clearly where the work is left.
 - By language (unmodified run): Telugu 24/36, Hindi 25/36.
-- Typed agent tasks (no speech): **9/9** (`eval/results_nov9_agentset.md`), small and favourable by construction.
+- Typed agent tasks (no speech): **9/9** (`eval/results_nov9_agentset.md`). It's a small set I picked myself, so don't read too much into it.
 - **STT** (`eval/stt_results.md`): 15/24 clips hit all keywords, p50 latency 1.02 s. Most failures are speech mishears (for example "wifi settings" heard as "Spotify settings").
 - The eval ran while Settings and Spotify were temporarily allowed for the demo recording; the Wi-Fi task still scored 0/6.
 - Older numbers (Nov 6, earlier config, 49/72, median 5.5 s) are kept in `eval/archive_20261109/` and `eval/results_before.md`.
@@ -120,7 +120,7 @@ Full eval, 2026-11-09 (`eval/results_nov9.md`): Jev + Groq `gpt-oss-120b` (reaso
 
 ## Demo video tooling
 
-`video/` builds the demo video: an SVG + GSAP page (`index.html`, `gfx.js`) driven by `timeline.js`, which `build_timeline.py` generates from the real takes, run logs and audio. `render.js` renders frames with Puppeteer, `check_layout.js` checks that no text leaves its box or overlaps, `build_v3.sh` runs the whole render and the ffmpeg composite. The recordings, voice audio and music are not in the repo (they contain my voice and real phone screens), so this folder documents how the video was made rather than rebuilding it from a clone. Font: Caveat Brush (SIL OFL, included).
+`video/` builds the demo video: an SVG + GSAP page (`index.html`, `gfx.js`) driven by `timeline.js`, which `build_timeline.py` generates from the real takes, run logs and audio. `render.js` renders frames with Puppeteer, `check_layout.js` checks that no text leaves its box or overlaps, `build_v3.sh` runs the whole render and the ffmpeg composite. The recordings, voice audio and music are not in the repo (they contain my voice and real phone screens), so you can see how the video was made, but you can't rebuild it from a clone. Font: Caveat Brush (SIL OFL, included).
 
 ## Credits and what is original
 
@@ -128,8 +128,8 @@ Full eval, 2026-11-09 (`eval/results_nov9.md`): Jev + Groq `gpt-oss-120b` (reaso
 - **Jev** (TypeSafe) for typed decisions; ideas from the Jev-Mobile paper (arXiv 2609.30186) and DailyDroid.
 - [uiautomator2](https://github.com/openatx/uiautomator2) for phone control; Groq for the text planner.
 - Video: GSAP, Puppeteer, ffmpeg, Caveat Brush font. Music in the demo video: "Country Craft" by Geoff Harvey (not included in this repo).
-- Original here: the UI-tree compaction (label merge, covered-element filter), the router and workflows (including Spotify and compound-task detection), the deterministic guardrails, the Jev-first / Groq-fallback planning, the glow overlay app, the eval harness and the video pipeline.
-- **No code copied** from other agent projects (DroidRun, AppAgent and similar). Papers and READMEs were read for ideas only.
+- What I built myself: the UI-tree compaction (label merge, covered-element filter), the router and workflows (including Spotify and compound-task detection), the deterministic guardrails, the Jev-first / Groq-fallback planning, the glow overlay app, the eval harness and the video pipeline.
+- I didn't copy code from other phone-agent projects (DroidRun, AppAgent and similar). I read their papers and READMEs for ideas.
 
 ## License
 
