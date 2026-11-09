@@ -6,6 +6,8 @@ Your grandmother shouldn't need English or steady hands to set an alarm. With Su
 
 Sugam is a laptop-tethered agent that controls a real Android phone by voice, in Telugu, Hindi, English or a mix. You speak; **Gnani Prisma v3.0** turns the audio into text; guardrails check it; a router sends it to a fixed workflow or to an LLM agent; the phone is driven over USB; **Gnani Timbre v3.0** speaks the result back in your language.
 
+Right now the phone has to be plugged into a laptop with a USB cable. The next version will be a standalone Android app, so you won't need the laptop or the cable.
+
 Built for the Gnani AI "Great Indian AI Internship Challenge". Tested on one phone (OnePlus Nord 3, OxygenOS / Android 16).
 
 > Demo video: _LinkedIn post link coming_
