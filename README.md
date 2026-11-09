@@ -1,6 +1,6 @@
 # Sugam
 
-**Easy phone access, in your own language.**
+**Easy phone access, in your own language.** · One-page pitch: [PITCH.md](PITCH.md)
 
 Your grandmother shouldn't need English or steady hands to set an alarm. With Sugam, she just says it.
 
