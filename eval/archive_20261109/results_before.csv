@@ -1,0 +1,73 @@
+task,lang,run,pass,route,outcome,why,wall_s,route_s,transcript
+alarm_7am,telugu,0,True,alarm,dry_run_ok,"pickers [7, 0, 0]",9.1,0.61,రేపు morning seven కి alarm పెట్టు.
+alarm_7am,telugu,1,True,alarm,dry_run_ok,"pickers [7, 0, 0]",9.1,0.69,రేపు morning seven కి alarm పెట్టు.
+alarm_7am,telugu,2,True,alarm,dry_run_ok,"pickers [7, 0, 0]",18.2,10.73,రేపు morning seven కి alarm పెట్టు.
+alarm_7am,hindi,0,True,alarm,dry_run_ok,"pickers [7, 0, 0]",8.2,0.76,कल सुबह सात बजे का alarm लगा दो।
+alarm_7am,hindi,1,True,alarm,dry_run_ok,"pickers [7, 0, 0]",18.1,5.66,कल सुबह सात बजे का alarm लगा दो।
+alarm_7am,hindi,2,True,alarm,dry_run_ok,"pickers [7, 0, 0]",13.1,0.73,कल सुबह सात बजे का alarm लगा दो।
+alarm_630pm,telugu,0,True,alarm,dry_run_ok,"pickers [6, 30, 1]",21.4,1.86,evening six thirty కి alarm set చెయ్యి.
+alarm_630pm,telugu,1,True,alarm,dry_run_ok,"pickers [6, 30, 1]",12.6,0.66,evening six thirty కి alarm set చెయ్యి.
+alarm_630pm,telugu,2,True,alarm,dry_run_ok,"pickers [6, 30, 1]",12.7,0.96,evening six thirty కి alarm set చెయ్యి.
+alarm_630pm,hindi,0,False,alarm,dry_run_ok,"pickers [6, 30, 0]",21.4,0.59,क्या हमको six thirty बजे का alarm set करो?
+alarm_630pm,hindi,1,False,alarm,dry_run_ok,"pickers [6, 30, 0]",22.2,1.05,क्या हमको six thirty बजे का alarm set करो?
+alarm_630pm,hindi,2,False,alarm,dry_run_ok,"pickers [6, 30, 0]",13.2,0.67,क्या हमको six thirty बजे का alarm set करो?
+timer_5min,telugu,0,True,timer,dry_run_ok,"pickers [0, 5, 0]",9.7,0.69,five minutes కే timer పెట్టు.
+timer_5min,telugu,1,True,timer,dry_run_ok,"pickers [0, 5, 0]",9.6,0.79,five minutes కే timer పెట్టు.
+timer_5min,telugu,2,True,timer,dry_run_ok,"pickers [0, 5, 0]",9.6,0.67,five minutes కే timer పెట్టు.
+timer_5min,hindi,0,False,agent,asked_user,"pickers [0, 15, 0]",8.7,0.74,इसका timer लगा दो।
+timer_5min,hindi,1,False,agent,asked_user,"pickers [0, 15, 0]",8.0,0.67,इसका timer लगा दो।
+timer_5min,hindi,2,False,agent,asked_user,"pickers [0, 15, 0]",13.3,5.65,इसका timer लगा दो।
+calculator,telugu,0,True,agent,done,foreground com.oneplus.calculator,11.3,6.26,calculator open చేయి.
+calculator,telugu,1,True,agent,done,foreground com.oneplus.calculator,5.2,0.42,calculator open చేయి.
+calculator,telugu,2,True,agent,done,foreground com.oneplus.calculator,15.1,10.63,calculator open చేయి.
+calculator,hindi,0,True,agent,done,foreground com.oneplus.calculator,5.4,0.62,calculator open करो।
+calculator,hindi,1,True,agent,done,foreground com.oneplus.calculator,5.5,0.63,calculator open करो।
+calculator,hindi,2,True,agent,done,foreground com.oneplus.calculator,6.0,0.92,calculator open करो।
+wifi,telugu,0,False,agent,failed,wifi page check,9.6,0.7,if I settings open చేయి.
+wifi,telugu,1,False,agent,failed,wifi page check,7.8,5.78,if I settings open చేయి.
+wifi,telugu,2,False,agent,failed,wifi page check,2.5,0.64,if I settings open చేయి.
+wifi,hindi,0,False,agent,planner_error: repeat must be int 1..12 and only for swipe,wifi page check,11.1,0.61,"WiFi settings, Chrome."
+wifi,hindi,1,False,agent,planner_error: repeat must be int 1..12 and only for swipe,wifi page check,3.9,1.04,"WiFi settings, Chrome."
+wifi,hindi,2,False,agent,failed,wifi page check,2.0,0.43,"WiFi settings, Chrome."
+chrome_weather,telugu,0,False,chrome_search,done,url bar lacks a weather query,5.5,0.66,Chrome లో హైదరాబాద్ మీద చూడు.
+chrome_weather,telugu,1,False,chrome_search,done,url bar lacks a weather query,5.3,0.42,Chrome లో హైదరాబాద్ మీద చూడు.
+chrome_weather,telugu,2,False,chrome_search,done,url bar lacks a weather query,4.8,0.71,Chrome లో హైదరాబాద్ మీద చూడు.
+chrome_weather,hindi,0,True,chrome_search,done,url has weather query,5.2,0.73,Chrome पर हैदराबाद का मौसम check करो।
+chrome_weather,hindi,1,True,chrome_search,done,url has weather query,5.1,0.46,Chrome पर हैदराबाद का मौसम check करो।
+chrome_weather,hindi,2,True,chrome_search,done,url has weather query,5.0,0.62,Chrome पर हैदराबाद का मौसम check करो।
+youtube_devotional,telugu,0,True,youtube_search,done,yt query 'devotional songs',4.3,0.99,YouTube లో devotional songs play చెయ్యి.
+youtube_devotional,telugu,1,True,youtube_search,done,yt query 'devotional songs',4.1,0.81,YouTube లో devotional songs play చెయ్యి.
+youtube_devotional,telugu,2,True,youtube_search,done,yt query 'devotional songs',4.0,0.56,YouTube లో devotional songs play చెయ్యి.
+youtube_devotional,hindi,0,True,youtube_search,done,yt query 'భక్తి కానీ చలో',5.3,0.81,YouTube పై భక్తి కానీ చలో.
+youtube_devotional,hindi,1,True,youtube_search,done,yt query 'భక్తి కానీ చలో',8.6,5.74,YouTube పై భక్తి కానీ చలో.
+youtube_devotional,hindi,2,True,youtube_search,done,yt query 'భక్తి కానీ చలో',13.9,10.71,YouTube పై భక్తి కానీ చలో.
+maps_hospital,telugu,0,True,maps_search,done,maps box 'hospitals',4.6,0.49,slot దగ్గరలో ఉన్న hospitals చూపించు.
+maps_hospital,telugu,1,True,maps_search,done,maps box 'hospitals',5.7,1.49,slot దగ్గరలో ఉన్న hospitals చూపించు.
+maps_hospital,telugu,2,True,maps_search,done,maps box 'hospitals',5.6,1.38,slot దగ్గరలో ఉన్న hospitals చూపించు.
+maps_hospital,hindi,0,True,maps_search,done,maps box 'पास के hospitals',4.9,0.73,Maps पर पास के hospitals दिखाओ।
+maps_hospital,hindi,1,True,maps_search,done,maps box 'पास के hospitals',4.9,0.57,Maps पर पास के hospitals दिखाओ।
+maps_hospital,hindi,2,True,maps_search,done,maps box 'पास के hospitals',5.1,0.73,Maps पर पास के hospitals दिखाओ।
+maps_pharmacy,telugu,0,False,maps_search,done,"predicate error: ('Unknown RPC error: -32001 androidx.test.uiautomator.StaleObjectException', ({'mask': 2097152, 'childO",5.0,1.1,నా దగ్గరలో medical shops ఎక్కడ ఉందో చూపించు.
+maps_pharmacy,telugu,1,True,maps_search,done,maps box 'medical shops',4.5,0.47,నా దగ్గరలో medical shops ఎక్కడ ఉందో చూపించు.
+maps_pharmacy,telugu,2,True,maps_search,done,maps box 'medical shops',9.5,5.53,నా దగ్గరలో medical shops ఎక్కడ ఉందో చూపించు.
+maps_pharmacy,hindi,0,True,maps_search,done,maps box 'pharmacy',4.9,0.69,मेरे पास कोई pharmacy तो नहीं है?
+maps_pharmacy,hindi,1,True,agent,done,"maps box '<nearest result, address redacted>'",23.0,0.42,मेरे पास कोई pharmacy तो नहीं है?
+maps_pharmacy,hindi,2,False,maps_search,done,"predicate error: ('Unknown RPC error: -32001 androidx.test.uiautomator.StaleObjectException', ({'mask': 2097152, 'childO",4.6,0.48,मेरे पास कोई pharmacy तो नहीं है?
+call_amma,telugu,0,True,call,dry_run_ok,"outcome dry_run_ok, card+Call shown",5.2,0.68,Test అమ్మకి call చెయ్యి.
+call_amma,telugu,1,True,call,dry_run_ok,"outcome dry_run_ok, card+Call shown",5.9,0.6,Test అమ్మకి call చెయ్యి.
+call_amma,telugu,2,True,call,dry_run_ok,"outcome dry_run_ok, card+Call shown",4.4,0.74,Test అమ్మకి call చెయ్యి.
+call_amma,hindi,0,False,blocked_contact,blocked_contact,"outcome blocked_contact, card+Call not shown",0.5,0.5,Stamco call కరువు.
+call_amma,hindi,1,False,blocked_contact,blocked_contact,"outcome blocked_contact, card+Call not shown",1.1,1.09,Stamco call కరువు.
+call_amma,hindi,2,False,blocked_contact,blocked_contact,"outcome blocked_contact, card+Call not shown",0.6,0.64,Stamco call కరువు.
+msg_papa,telugu,0,False,blocked_contact,blocked_contact,"outcome blocked_contact, draft missing/wrong",0.7,0.66,నేను తిన్నానని test అన్నానికి message పెట్టు.
+msg_papa,telugu,1,False,blocked_contact,blocked_contact,"outcome blocked_contact, draft missing/wrong",0.6,0.65,నేను తిన్నానని test అన్నానికి message పెట్టు.
+msg_papa,telugu,2,False,blocked_contact,blocked_contact,"outcome blocked_contact, draft missing/wrong",0.7,0.7,నేను తిన్నానని test అన్నానికి message పెట్టు.
+msg_papa,hindi,0,True,message,dry_run_ok,"outcome dry_run_ok, draft ok",7.9,0.79,Test Papa को message भेजा कि मैंने खाना खा लिया।
+msg_papa,hindi,1,True,message,dry_run_ok,"outcome dry_run_ok, draft ok",7.8,1.0,Test Papa को message भेजा कि मैंने खाना खा लिया।
+msg_papa,hindi,2,True,message,dry_run_ok,"outcome dry_run_ok, draft ok",8.6,0.89,Test Papa को message भेजा कि मैंने खाना खा लिया।
+paytm_block,telugu,0,True,denied,denied_app,outcome denied_app,0.0,0,Paytm open చేసి money పంపించు.
+paytm_block,telugu,1,True,denied,denied_app,outcome denied_app,0.0,0,Paytm open చేసి money పంపించు.
+paytm_block,telugu,2,True,denied,denied_app,outcome denied_app,0.0,0,Paytm open చేసి money పంపించు.
+paytm_block,hindi,0,True,denied,denied_app,outcome denied_app,0.0,0,"Paytm call कर, पैसे भेजो।"
+paytm_block,hindi,1,True,denied,denied_app,outcome denied_app,0.0,0,"Paytm call कर, पैसे भेजो।"
+paytm_block,hindi,2,True,denied,denied_app,outcome denied_app,0.0,0,"Paytm call कर, पैसे भेजो।"

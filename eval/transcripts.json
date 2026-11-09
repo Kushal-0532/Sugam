@@ -1,0 +1,302 @@
+{
+ "alarm_7am_telugu": {
+  "transcript": "రేపు morning seven కి alarm పెట్టు.",
+  "detected": "te-IN",
+  "stt_s": 1.11
+ },
+ "alarm_7am_hindi": {
+  "transcript": "कल सुबह सात बजे का alarm लगा दो।",
+  "detected": "hi-IN",
+  "stt_s": 1.02
+ },
+ "alarm_630pm_telugu": {
+  "transcript": "evening six thirty కి alarm set చెయ్యి.",
+  "detected": "en-IN",
+  "stt_s": 1.03
+ },
+ "alarm_630pm_hindi": {
+  "transcript": "शाम को six thirty बजे का alarm set करो।",
+  "detected": "hi-IN",
+  "stt_s": 1.02
+ },
+ "timer_5min_telugu": {
+  "transcript": "five minutes కే timer పెట్టు.",
+  "detected": "te-IN",
+  "stt_s": 1.02
+ },
+ "timer_5min_hindi": {
+  "transcript": "इसका timer लगा दो।",
+  "detected": "hi-IN",
+  "stt_s": 1.02
+ },
+ "calculator_telugu": {
+  "transcript": "calculator open చేయి.",
+  "detected": "en-IN",
+  "stt_s": 1.02
+ },
+ "calculator_hindi": {
+  "transcript": "calculator open करो।",
+  "detected": "en-IN",
+  "stt_s": 0.78
+ },
+ "wifi_telugu": {
+  "transcript": "Spotify settings open చేయి.",
+  "detected": "en-IN",
+  "stt_s": 0.8
+ },
+ "wifi_hindi": {
+  "transcript": "Spotify settings, Google Maps.",
+  "detected": "en-IN",
+  "stt_s": 0.98
+ },
+ "chrome_weather_telugu": {
+  "transcript": "Chrome లో హైదరాబాద్ మీద చూడు.",
+  "detected": "te-IN",
+  "stt_s": 1.03
+ },
+ "chrome_weather_hindi": {
+  "transcript": "Chrome पर हैदराबाद का मौसम check करो।",
+  "detected": "hi-IN",
+  "stt_s": 0.86
+ },
+ "youtube_devotional_telugu": {
+  "transcript": "YouTube లో devotional songs play చెయ్యి.",
+  "detected": "en-IN",
+  "stt_s": 1.21
+ },
+ "youtube_devotional_hindi": {
+  "transcript": "YouTube పై భక్తి కానీ చలో.",
+  "detected": "te-IN",
+  "stt_s": 1.03
+ },
+ "maps_hospital_telugu": {
+  "transcript": "Spotify దగ్గరలో ఉన్న hospitals చూపించు.",
+  "detected": "te-IN",
+  "stt_s": 0.8
+ },
+ "maps_hospital_hindi": {
+  "transcript": "Maps पर पास के hospitals दिखाओ।",
+  "detected": "hi-IN",
+  "stt_s": 1.46
+ },
+ "maps_pharmacy_telugu": {
+  "transcript": "నా దగ్గరలో medical shops ఎక్కడ ఉందో చూపించు.",
+  "detected": "te-IN",
+  "stt_s": 1.03
+ },
+ "maps_pharmacy_hindi": {
+  "transcript": "मेरे पास कोई pharmacy तो नहीं है?",
+  "detected": "hi-IN",
+  "stt_s": 0.93
+ },
+ "call_amma_telugu": {
+  "transcript": "Test Amma के call चाहिए।",
+  "detected": "hi-IN",
+  "stt_s": 1.13
+ },
+ "call_amma_hindi": {
+  "transcript": "Spotify call కొరకు.",
+  "detected": "te-IN",
+  "stt_s": 1.03
+ },
+ "msg_papa_telugu": {
+  "transcript": "నేను తిన్నానని test అన్నానికి message పెట్టు.",
+  "detected": "te-IN",
+  "stt_s": 1.03
+ },
+ "msg_papa_hindi": {
+  "transcript": "Test Papa को message भेजा कि मैंने खाना खा लिया।",
+  "detected": "hi-IN",
+  "stt_s": 1.03
+ },
+ "paytm_block_telugu": {
+  "transcript": "Paytm open చేసి money పంపించు.",
+  "detected": "te-IN",
+  "stt_s": 1.03
+ },
+ "paytm_block_hindi": {
+  "transcript": "Paytm call कर, पैसे भेजो।",
+  "detected": "hi-IN",
+  "stt_s": 1.03
+ },
+ "confirm_yes_telugu": {
+  "transcript": "Open now.",
+  "detected": "en-IN",
+  "stt_s": 1.03
+ },
+ "confirm_yes_hindi": {
+  "transcript": "ఆ.",
+  "detected": "te-IN",
+  "stt_s": 1.03
+ },
+ "confirm_no_telugu": {
+  "transcript": "కాదు.",
+  "detected": "te-IN",
+  "stt_s": 1.03
+ },
+ "confirm_no_hindi": {
+  "transcript": "नहीं।",
+  "detected": "hi-IN",
+  "stt_s": 0.78
+ },
+ "stop_telugu": {
+  "transcript": "App.",
+  "detected": "en-IN",
+  "stt_s": 0.95
+ },
+ "stop_hindi": {
+  "transcript": "रुको।",
+  "detected": "hi-IN",
+  "stt_s": 1.36
+ },
+ "alarm_7am_telugu@lang": {
+  "transcript": "రేపు morning seven కి alarm పెట్టు.",
+  "detected": "te-IN",
+  "stt_s": 1.03
+ },
+ "alarm_7am_hindi@lang": {
+  "transcript": "कल सुबह सात बजे का alarm लगा दो।",
+  "detected": "hi-IN",
+  "stt_s": 1.0
+ },
+ "alarm_630pm_telugu@lang": {
+  "transcript": "evening six thirty కి alarm set చెయ్యి.",
+  "detected": "en-IN",
+  "stt_s": 1.02
+ },
+ "alarm_630pm_hindi@lang": {
+  "transcript": "शाम को six thirty बजे का alarm set करो।",
+  "detected": "hi-IN",
+  "stt_s": 1.03
+ },
+ "timer_5min_telugu@lang": {
+  "transcript": "five minutes కే timer పెట్టు.",
+  "detected": "te-IN",
+  "stt_s": 1.02
+ },
+ "timer_5min_hindi@lang": {
+  "transcript": "इसका timer लगा दो।",
+  "detected": "hi-IN",
+  "stt_s": 1.02
+ },
+ "calculator_telugu@lang": {
+  "transcript": "calculator open చెయ్యి.",
+  "detected": "te-IN",
+  "stt_s": 1.02
+ },
+ "calculator_hindi@lang": {
+  "transcript": "calculator open करो।",
+  "detected": "en-IN",
+  "stt_s": 1.03
+ },
+ "wifi_telugu@lang": {
+  "transcript": "Spotify settings open చేయి.",
+  "detected": "en-IN",
+  "stt_s": 0.8
+ },
+ "wifi_hindi@lang": {
+  "transcript": "Spotify settings खोलो।",
+  "detected": "en-IN",
+  "stt_s": 1.02
+ },
+ "chrome_weather_telugu@lang": {
+  "transcript": "Chrome లో హైదరాబాద్ మీద చూడు.",
+  "detected": "te-IN",
+  "stt_s": 0.88
+ },
+ "chrome_weather_hindi@lang": {
+  "transcript": "Chrome पर हैदराबाद का मौसम check करो।",
+  "detected": "hi-IN",
+  "stt_s": 0.7
+ },
+ "youtube_devotional_telugu@lang": {
+  "transcript": "YouTube లో devotional songs play చెయ్యి.",
+  "detected": "en-IN",
+  "stt_s": 0.78
+ },
+ "youtube_devotional_hindi@lang": {
+  "transcript": "YouTube पर भक्ति गाने चलाओ।",
+  "detected": "hi-IN",
+  "stt_s": 0.7
+ },
+ "maps_hospital_telugu@lang": {
+  "transcript": "slot దగ్గరలో ఉన్న hospitals చూపించు.",
+  "detected": "te-IN",
+  "stt_s": 0.6
+ },
+ "maps_hospital_hindi@lang": {
+  "transcript": "Maps पर पास के hospitals दिखाओ।",
+  "detected": "hi-IN",
+  "stt_s": 0.76
+ },
+ "maps_pharmacy_telugu@lang": {
+  "transcript": "నా దగ్గరలో medical shops ఎక్కడ ఉందో చూపించు.",
+  "detected": "te-IN",
+  "stt_s": 0.68
+ },
+ "maps_pharmacy_hindi@lang": {
+  "transcript": "मेरे पास कोई pharmacy ढूंढ दो।",
+  "detected": "hi-IN",
+  "stt_s": 0.63
+ },
+ "call_amma_telugu@lang": {
+  "transcript": "Test అమ్మకి call చెయ్యి.",
+  "detected": "te-IN",
+  "stt_s": 0.74
+ },
+ "call_amma_hindi@lang": {
+  "transcript": "Spotify को call करो।",
+  "detected": "hi-IN",
+  "stt_s": 0.66
+ },
+ "msg_papa_telugu@lang": {
+  "transcript": "నేను తిన్నానని test అన్నానికి message పెట్టు.",
+  "detected": "te-IN",
+  "stt_s": 0.67
+ },
+ "msg_papa_hindi@lang": {
+  "transcript": "Test Papa को message भेजा कि मैंने खाना खा लिया।",
+  "detected": "hi-IN",
+  "stt_s": 0.68
+ },
+ "paytm_block_telugu@lang": {
+  "transcript": "Paytm open చేసి money పంపించు.",
+  "detected": "te-IN",
+  "stt_s": 1.02
+ },
+ "paytm_block_hindi@lang": {
+  "transcript": "Paytm call कर, पैसे भेजो।",
+  "detected": "hi-IN",
+  "stt_s": 1.02
+ },
+ "confirm_yes_telugu@gate": {
+  "transcript": "అవును.",
+  "detected": "te",
+  "stt_s": 0.49
+ },
+ "confirm_yes_hindi@gate": {
+  "transcript": "हाँ।",
+  "detected": "hi",
+  "stt_s": 0.54
+ },
+ "confirm_no_telugu@gate": {
+  "transcript": "కాదు.",
+  "detected": "te",
+  "stt_s": 0.52
+ },
+ "confirm_no_hindi@gate": {
+  "transcript": "नहीं।",
+  "detected": "hi",
+  "stt_s": 0.52
+ },
+ "stop_telugu@gate": {
+  "transcript": "ఆపు.",
+  "detected": "te",
+  "stt_s": 0.47
+ },
+ "stop_hindi@gate": {
+  "transcript": "रुको।",
+  "detected": "hi",
+  "stt_s": 0.55
+ }
+}

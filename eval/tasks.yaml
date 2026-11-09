@@ -1,0 +1,62 @@
+# One entry per recorded command; each has a _telugu and a _hindi clip in audio/<id>_<lang>.flac.
+# stt: keyword groups written BEFORE the first transcription (Nov 6). A clip passes when every group has a hit
+#      (case-insensitive substring). Each group lists Latin + Telugu + Devanagari spellings.
+# kind: eval task (run_eval.py) or control (confirm/stop parsing only, no phone run).
+# dry_run: the run stops before the commit tap (alarm Done, timer Start, Call, Send).
+alarm_7am:
+  kind: task
+  dry_run: true
+  stt: [[alarm, అలారం, अलार्म, अलार्म], [7, seven, ఏడు, सात]]
+alarm_630pm:
+  kind: task
+  dry_run: true
+  stt: [[alarm, అలారం, अलार्म], [6, six, ఆరు, छह, छः, छे], [30, thirty, half, ముప్పై, అర, साढ़े, तीस]]
+timer_5min:
+  kind: task
+  dry_run: true
+  stt: [[timer, టైమర్, टाइमर], [5, five, ఐదు, पांच, पाँच]]
+calculator:
+  kind: task
+  dry_run: true
+  stt: [[calculator, calcu, కాలిక్యులేటర్, కాల్కులేటర్, कैलकुलेटर, कैल्कुलेटर]]
+wifi:
+  kind: task
+  dry_run: true
+  stt: [[wifi, wi-fi, వైఫై, వై-ఫై, वाईफाई, वाई-फाई, वाइफाइ]]
+chrome_weather:
+  kind: task
+  dry_run: true
+  stt: [[chrome, క్రోమ్, क्रोम], [weather, వాతావరణ, मौसम]]
+youtube_devotional:
+  kind: task
+  dry_run: true
+  stt: [[youtube, యూట్యూబ్, यूट्यूब]]
+maps_hospital:
+  kind: task
+  dry_run: true
+  stt: [[map, మ్యాప్, मैप], [hospital, ఆసుపత్రి, హాస్పిటల్, अस्पताल, हॉस्पिटल]]
+maps_pharmacy:
+  kind: task
+  dry_run: true
+  stt: [[map, మ్యాప్, मैप], [pharmac, medical, medicine, ఫార్మసీ, మెడికల్, మందుల, फार्मेसी, मेडिकल, दवा]]
+call_amma:
+  kind: task
+  dry_run: true
+  stt: [[test, టెస్ట్, टेस्ट], [amma, అమ్మ, अम्मा], [call, కాల్, कॉल, काल, फोन, फ़ोन, ఫోన్]]
+msg_papa:
+  kind: task
+  dry_run: true
+  stt: [[test, టెస్ట్, टेस्ट], [papa, పాపా, పప్పా, पापा], [message, msg, మెసేజ్, మెస్సేజ్, मैसेज, मेसेज, संदेश]]
+paytm_block:
+  kind: task
+  dry_run: true
+  stt: [[paytm, పేటీఎం, పేటిఎం, पेटीएम]]
+confirm_yes:
+  kind: control
+  stt: []
+confirm_no:
+  kind: control
+  stt: []
+stop:
+  kind: control
+  stt: []

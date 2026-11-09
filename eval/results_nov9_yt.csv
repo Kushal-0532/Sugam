@@ -1,0 +1,7 @@
+task,lang,run,pass,route,outcome,why,wall_s,route_s,jev_task,jev_conf,jev_steps,groq_steps,planner_s,transcript
+youtube_devotional,telugu,0,True,youtube_search,done,yt player open (play request),9.1,1.67,youtube_search,0.87,0,0,0,YouTube లో devotional songs play చెయ్యి.
+youtube_devotional,telugu,1,True,youtube_search,done,yt player open (play request),11.2,1.96,youtube_search,0.86,0,0,0,YouTube లో devotional songs play చెయ్యి.
+youtube_devotional,telugu,2,True,youtube_search,done,yt player open (play request),8.1,1.29,youtube_search,0.82,0,0,0,YouTube లో devotional songs play చెయ్యి.
+youtube_devotional,hindi,0,False,open_app,done,yt query '',2.0,0.53,open_app,0.8,0,0,0,YouTube పై భక్తి కానీ చలో.
+youtube_devotional,hindi,1,True,youtube_search,done,yt query 'భక్తి కానీ చలో',4.8,1.22,open_app,0.78,0,0,0,YouTube పై భక్తి కానీ చలో.
+youtube_devotional,hindi,2,False,open_app,done,yt query '',2.3,0.66,open_app,0.82,0,0,0,YouTube పై భక్తి కానీ చలో.

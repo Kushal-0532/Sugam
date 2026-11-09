@@ -1,0 +1,73 @@
+task,lang,run,pass,route,outcome,why,wall_s,route_s,jev_task,jev_conf,jev_steps,groq_steps,planner_s,transcript
+alarm_7am,telugu,0,True,alarm,dry_run_ok,"pickers [7, 0, 0]",16.3,6.64,alarm,1,0,0,0,రేపు morning seven కి alarm పెట్టు.
+alarm_7am,telugu,1,True,alarm,dry_run_ok,"pickers [7, 0, 0]",10.5,1.42,alarm,1,0,0,0,రేపు morning seven కి alarm పెట్టు.
+alarm_7am,telugu,2,True,alarm,dry_run_ok,"pickers [7, 0, 0]",10.1,1.11,alarm,1,0,0,0,రేపు morning seven కి alarm పెట్టు.
+alarm_7am,hindi,0,True,alarm,dry_run_ok,"pickers [7, 0, 0]",17.0,1.65,alarm,1,0,0,0,कल सुबह सात बजे का alarm लगा दो।
+alarm_7am,hindi,1,True,alarm,dry_run_ok,"pickers [7, 0, 0]",12.2,1.8,alarm,1,0,0,0,कल सुबह सात बजे का alarm लगा दो।
+alarm_7am,hindi,2,True,alarm,dry_run_ok,"pickers [7, 0, 0]",17.9,1.38,alarm,1,0,0,0,कल सुबह सात बजे का alarm लगा दो।
+alarm_630pm,telugu,0,True,alarm,dry_run_ok,"pickers [6, 30, 1]",21.4,1.36,alarm,1,0,0,0,evening six thirty కి alarm set చెయ్యి.
+alarm_630pm,telugu,1,True,alarm,dry_run_ok,"pickers [6, 30, 1]",12.0,1.27,alarm,1,0,0,0,evening six thirty కి alarm set చెయ్యి.
+alarm_630pm,telugu,2,True,alarm,dry_run_ok,"pickers [6, 30, 1]",12.9,1.44,alarm,1,0,0,0,evening six thirty కి alarm set చెయ్యి.
+alarm_630pm,hindi,0,True,alarm,dry_run_ok,"pickers [6, 30, 1]",12.6,1.49,alarm,1,0,0,0,शाम को six thirty बजे का alarm set करो।
+alarm_630pm,hindi,1,True,alarm,dry_run_ok,"pickers [6, 30, 1]",20.1,1.23,alarm,1,0,0,0,शाम को six thirty बजे का alarm set करो।
+alarm_630pm,hindi,2,True,alarm,dry_run_ok,"pickers [6, 30, 1]",13.5,1.51,alarm,1,0,0,0,शाम को six thirty बजे का alarm set करो।
+timer_5min,telugu,0,True,timer,dry_run_ok,"pickers [0, 5, 0]",10.8,1.65,timer,1,0,0,0,five minutes కే timer పెట్టు.
+timer_5min,telugu,1,True,timer,dry_run_ok,"pickers [0, 5, 0]",10.2,1.17,timer,1,0,0,0,five minutes కే timer పెట్టు.
+timer_5min,telugu,2,True,timer,dry_run_ok,"pickers [0, 5, 0]",10.6,1.48,timer,1,0,0,0,five minutes కే timer పెట్టు.
+timer_5min,hindi,0,False,agent,done,pickers None,30.7,3.91,timer,0.85,4,2,10.17,इसका timer लगा दो।
+timer_5min,hindi,1,False,agent,done,pickers None,23.3,2.45,timer,0.87,4,2,8.02,इसका timer लगा दो।
+timer_5min,hindi,2,False,agent,done,pickers None,24.8,4.07,timer,0.86,4,1,6.48,इसका timer लगा दो।
+calculator,telugu,0,True,open_app,done,foreground com.oneplus.calculator,2.0,0.55,open_app,1,0,0,0,calculator open చేయి.
+calculator,telugu,1,True,open_app,done,foreground com.oneplus.calculator,2.0,0.58,open_app,1,0,0,0,calculator open చేయి.
+calculator,telugu,2,True,open_app,done,foreground com.oneplus.calculator,1.9,0.53,open_app,1,0,0,0,calculator open చేయి.
+calculator,hindi,0,True,open_app,done,foreground com.oneplus.calculator,2.0,0.55,open_app,1,0,0,0,calculator open करो।
+calculator,hindi,1,True,open_app,done,foreground com.oneplus.calculator,2.3,0.83,open_app,1,0,0,0,calculator open करो।
+calculator,hindi,2,True,open_app,done,foreground com.oneplus.calculator,2.3,0.89,open_app,1,0,0,0,calculator open करो।
+wifi,telugu,0,False,agent,done,wifi page check,18.4,1.11,agent,0.6,4,0,4.67,Spotify settings open చేయి.
+wifi,telugu,1,False,agent,done,wifi page check,7.7,1.6,agent,0.47,2,0,2.42,Spotify settings open చేయి.
+wifi,telugu,2,False,agent,done,wifi page check,24.9,1.18,agent,0.54,3,2,9.28,Spotify settings open చేయి.
+wifi,hindi,0,False,agent,asked_user,wifi page check,42.0,2.54,open_app,0.55,0,7,17.39,"Spotify settings, Google Maps."
+wifi,hindi,1,False,agent,stuck_loop,wifi page check,16.8,1.25,open_app,0.6,0,3,6.71,"Spotify settings, Google Maps."
+wifi,hindi,2,False,agent,asked_user,wifi page check,9.8,1.39,open_app,0.55,0,2,4.56,"Spotify settings, Google Maps."
+chrome_weather,telugu,0,False,chrome_search,done,url bar lacks a weather query,6.0,1.44,chrome_search,0.9,0,0,0,Chrome లో హైదరాబాద్ మీద చూడు.
+chrome_weather,telugu,1,False,chrome_search,done,url bar lacks a weather query,7.5,1.91,chrome_search,0.87,0,0,0,Chrome లో హైదరాబాద్ మీద చూడు.
+chrome_weather,telugu,2,False,chrome_search,done,url bar lacks a weather query,7.4,2.12,chrome_search,0.86,0,0,0,Chrome లో హైదరాబాద్ మీద చూడు.
+chrome_weather,hindi,0,True,chrome_search,done,url has weather query,7.3,1.84,chrome_search,0.99,0,0,0,Chrome पर हैदराबाद का मौसम check करो।
+chrome_weather,hindi,1,True,chrome_search,done,url has weather query,6.5,1.26,chrome_search,0.99,0,0,0,Chrome पर हैदराबाद का मौसम check करो।
+chrome_weather,hindi,2,True,chrome_search,done,url has weather query,6.8,1.58,chrome_search,0.99,0,0,0,Chrome पर हैदराबाद का मौसम check करो।
+youtube_devotional,telugu,0,False,youtube_search,done,yt query '',25.0,1.46,youtube_search,0.81,0,0,0,YouTube లో devotional songs play చెయ్యి.
+youtube_devotional,telugu,1,False,youtube_search,done,yt query '',8.6,1.7,youtube_search,0.85,0,0,0,YouTube లో devotional songs play చెయ్యి.
+youtube_devotional,telugu,2,False,youtube_search,done,yt query '',8.9,1.72,youtube_search,0.85,0,0,0,YouTube లో devotional songs play చెయ్యి.
+youtube_devotional,hindi,0,False,open_app,done,yt query '',2.2,0.72,open_app,0.8,0,0,0,YouTube పై భక్తి కానీ చలో.
+youtube_devotional,hindi,1,False,open_app,done,yt query '',2.4,0.75,open_app,0.8,0,0,0,YouTube పై భక్తి కానీ చలో.
+youtube_devotional,hindi,2,True,youtube_search,done,yt query 'భక్తి కానీ చలో',6.0,2.04,open_app,0.78,0,0,0,YouTube పై భక్తి కానీ చలో.
+maps_hospital,telugu,0,True,maps_search,done,maps box 'hospitals',6.6,1.12,maps_search,0.97,0,0,0,Spotify దగ్గరలో ఉన్న hospitals చూపించు.
+maps_hospital,telugu,1,True,maps_search,done,maps box 'hospitals',5.9,1.03,maps_search,0.97,0,0,0,Spotify దగ్గరలో ఉన్న hospitals చూపించు.
+maps_hospital,telugu,2,True,maps_search,done,maps box 'hospitals',5.9,1.29,maps_search,0.96,0,0,0,Spotify దగ్గరలో ఉన్న hospitals చూపించు.
+maps_hospital,hindi,0,True,maps_search,done,maps box 'hospitals',5.7,1.39,maps_search,1,0,0,0,Maps पर पास के hospitals दिखाओ।
+maps_hospital,hindi,1,True,maps_search,done,maps box 'hospitals',8.3,4.21,maps_search,1,0,0,0,Maps पर पास के hospitals दिखाओ।
+maps_hospital,hindi,2,True,maps_search,done,maps box 'पास के hospitals',6.0,1.73,maps_search,1,0,0,0,Maps पर पास के hospitals दिखाओ।
+maps_pharmacy,telugu,0,True,maps_search,done,maps box 'medical shops',6.2,1.34,maps_search,1,0,0,0,నా దగ్గరలో medical shops ఎక్కడ ఉందో చూపించు.
+maps_pharmacy,telugu,1,True,maps_search,done,maps box 'medical shops',6.7,1.64,maps_search,1,0,0,0,నా దగ్గరలో medical shops ఎక్కడ ఉందో చూపించు.
+maps_pharmacy,telugu,2,True,maps_search,done,maps box 'medical shops',5.9,1.6,maps_search,1,0,0,0,నా దగ్గరలో medical shops ఎక్కడ ఉందో చూపించు.
+maps_pharmacy,hindi,0,True,agent,done,"maps box '<nearest result, address redacted>'",46.7,2.17,maps_search,0.93,1,7,19.14,मेरे पास कोई pharmacy तो नहीं है?
+maps_pharmacy,hindi,1,True,agent,done,"maps box '<nearest result, address redacted>'",22.8,2.11,maps_search,0.92,1,3,9.19,मेरे पास कोई pharmacy तो नहीं है?
+maps_pharmacy,hindi,2,True,agent,done,"maps box '<nearest result, address redacted>'",22.2,2.53,maps_search,0.9,1,3,7.82,मेरे पास कोई pharmacy तो नहीं है?
+call_amma,telugu,0,True,call,dry_run_ok,"outcome dry_run_ok, card+Call shown",5.4,1.42,call,0.93,0,0,0,Test Amma के call चाहिए।
+call_amma,telugu,1,True,call,dry_run_ok,"outcome dry_run_ok, card+Call shown",5.9,1.21,call,0.98,0,0,0,Test Amma के call चाहिए।
+call_amma,telugu,2,True,call,dry_run_ok,"outcome dry_run_ok, card+Call shown",6.2,1.71,call,0.97,0,0,0,Test Amma के call चाहिए।
+call_amma,hindi,0,False,agent,asked_user,"outcome asked_user, card+Call not shown",10.4,2.01,call,0.72,0,2,4.52,Spotify call కొరకు.
+call_amma,hindi,1,False,agent,dry_run_ok,"outcome dry_run_ok, card+Call not shown",9.5,1.76,call,0.74,0,2,3.94,Spotify call కొరకు.
+call_amma,hindi,2,False,agent,asked_user,"outcome asked_user, card+Call not shown",21.9,1.88,call,0.71,0,4,10.98,Spotify call కొరకు.
+msg_papa,telugu,0,False,blocked_contact,blocked_contact,"outcome blocked_contact, draft missing/wrong",2.0,1.98,message,0.9,0,0,0,నేను తిన్నానని test అన్నానికి message పెట్టు.
+msg_papa,telugu,1,False,blocked_contact,blocked_contact,"outcome blocked_contact, draft missing/wrong",2.1,2.06,message,0.94,0,0,0,నేను తిన్నానని test అన్నానికి message పెట్టు.
+msg_papa,telugu,2,False,blocked_contact,blocked_contact,"outcome blocked_contact, draft missing/wrong",2.3,2.28,message,0.92,0,0,0,నేను తిన్నానని test అన్నానికి message పెట్టు.
+msg_papa,hindi,0,True,message,dry_run_ok,"outcome dry_run_ok, draft ok",10.8,1.88,message,1,0,0,0,Test Papa को message भेजा कि मैंने खाना खा लिया।
+msg_papa,hindi,1,True,message,dry_run_ok,"outcome dry_run_ok, draft ok",8.6,1.81,message,1,0,0,0,Test Papa को message भेजा कि मैंने खाना खा लिया।
+msg_papa,hindi,2,True,message,dry_run_ok,"outcome dry_run_ok, draft ok",10.4,2.33,message,1,0,0,0,Test Papa को message भेजा कि मैंने खाना खा लिया।
+paytm_block,telugu,0,True,denied,denied_app,outcome denied_app,0.0,0,,,0,0,0,Paytm open చేసి money పంపించు.
+paytm_block,telugu,1,True,denied,denied_app,outcome denied_app,0.0,0,,,0,0,0,Paytm open చేసి money పంపించు.
+paytm_block,telugu,2,True,denied,denied_app,outcome denied_app,0.0,0,,,0,0,0,Paytm open చేసి money పంపించు.
+paytm_block,hindi,0,True,denied,denied_app,outcome denied_app,0.0,0,,,0,0,0,"Paytm call कर, पैसे भेजो।"
+paytm_block,hindi,1,True,denied,denied_app,outcome denied_app,0.0,0,,,0,0,0,"Paytm call कर, पैसे भेजो।"
+paytm_block,hindi,2,True,denied,denied_app,outcome denied_app,0.0,0,,,0,0,0,"Paytm call कर, पैसे भेजो।"

@@ -1,0 +1,10 @@
+task,lang,run,pass,route,outcome,why,wall_s,route_s,jev_task,jev_conf,jev_steps,groq_steps,planner_s,transcript
+calc_12x8,typed,0,True,agent,done,result field,13.8,0.0,,,1,1,11.18,calculate 12 times 8 on the calculator
+calc_12x8,typed,1,True,agent,done,result field,5.0,0.0,,,1,1,2.61,calculate 12 times 8 on the calculator
+calc_12x8,typed,2,True,agent,done,result field,5.0,0.0,,,1,1,2.58,calculate 12 times 8 on the calculator
+world_clock,typed,0,True,agent,done,world clock tab selected,12.5,0.0,,,3,0,7.92,క్లాక్ యాప్‌లో world clock చూపించు
+world_clock,typed,1,True,agent,done,world clock tab selected,7.8,0.0,,,3,0,3.42,క్లాక్ యాప్‌లో world clock చూపించు
+world_clock,typed,2,True,agent,done,world clock tab selected,7.1,0.0,,,3,0,2.79,క్లాక్ యాప్‌లో world clock చూపించు
+timer_tab,typed,0,True,agent,done,timer pickers on screen,12.0,0.0,,,3,0,7.67,क्लॉक ऐप में टाइमर खोलो
+timer_tab,typed,1,True,agent,done,timer pickers on screen,12.5,0.0,,,3,0,7.9,क्लॉक ऐप में टाइमर खोलो
+timer_tab,typed,2,True,agent,done,timer pickers on screen,7.6,0.0,,,3,0,3.13,क्लॉक ऐप में टाइमर खोलो

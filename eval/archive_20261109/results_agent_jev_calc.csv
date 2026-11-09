@@ -1,0 +1,2 @@
+task,lang,run,pass,route,outcome,why,wall_s,route_s,jev_task,jev_conf,jev_steps,groq_steps,planner_s,transcript
+calc_12x8,typed,0,True,agent,done,result field,37.7,0.0,,,5,2,23.69,calculate 12 times 8 on the calculator
