@@ -1,0 +1,68 @@
+# Secrets and local state (secrets live in ~/.env, never in the repo)
+.env
+.claude/
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Runtime output: run logs/screenshots can show real phone content
+cache/
+logs/
+
+# Recordings (user's own voice) and generated audio
+audio/
+eval/audio/
+*.flac
+*.wav
+*.mp4
+
+# Working notes (candid, contains personal context)
+PLAN.md
+
+# Demo takes (large, contain the user's voice)
+demo/
+
+# Third-party reference videos (not ours to redistribute)
+videos_reference/
+
+# Video tooling deps and renders
+video/node_modules/
+video/out/
+
+# arena runs
+.arena/
+android/glow/build/
+android/glow/debug.keystore
+video/fonts/_raw/
+
+# Render scratch: phone screenshots (may show paired BT devices), logs, flags, v1/v2 backups
+video/work/
+
+# Background music (licence unverified)
+video/music/
+
+# Video working notes
+video/storyboard_arena_rev4_zh.md
+
+# Fonts: only CaveatBrush (used by the video tooling) + its licence are committed
+video/fonts/**
+!video/fonts/Handwriting/
+!video/fonts/Handwriting/CaveatBrush-Regular.ttf
+!video/fonts/Handwriting/OFL.txt
+
+# Editor/OS junk, temp files, build outputs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.log
+*.flag
+*.tmp
+*.pyc
+*.apk
+*.keystore
+*.jks
+node_modules/

@@ -1,0 +1,7 @@
+uiautomator2
+requests
+pyyaml
+python-dotenv
+anthropic
+openai
+pytest

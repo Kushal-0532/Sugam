@@ -1,0 +1,52 @@
+# Fixed narration. Generated once with `python -m src.cli --warm`, then served from cache/tts (0 credits).
+# lang keys match the router: te / hi / hinglish / en. Wording is gender-neutral on purpose (voice can change).
+working:
+  en: "On it."
+  te: "సరే, చేస్తున్నాను."
+  hi: "ठीक है, अभी करते हैं।"
+  hinglish: "Theek hai, abhi karte hain."
+didnt_hear:
+  en: "Sorry, I didn't catch that. Please say it again."
+  te: "క్షమించండి, వినిపించలేదు. మళ్ళీ చెప్పండి."
+  hi: "माफ़ कीजिए, सुनाई नहीं दिया। फिर से बोलिए।"
+  hinglish: "Sorry, sunai nahi diya. Phir se boliye."
+done:
+  en: "Done."
+  te: "అయిపోయింది."
+  hi: "हो गया।"
+  hinglish: "Ho gaya."
+dry_run:
+  en: "Test mode: I stopped before the final tap."
+  te: "టెస్ట్ మోడ్: చివరి ట్యాప్ ముందు ఆపేశాను."
+  hi: "टेस्ट मोड: आख़िरी टैप से पहले रोक दिया।"
+  hinglish: "Test mode: last tap se pehle rok diya."
+failed:
+  en: "Sorry, I couldn't finish that."
+  te: "క్షమించండి, అది పూర్తి చేయలేకపోయాను."
+  hi: "माफ़ कीजिए, यह पूरा नहीं हो पाया।"
+  hinglish: "Sorry, yeh poora nahi ho paya."
+blocked:
+  en: "That app is blocked for safety."
+  te: "భద్రత కోసం ఆ యాప్ బ్లాక్ చేయబడింది."
+  hi: "सुरक्षा के लिए यह ऐप ब्लॉक है।"
+  hinglish: "Safety ke liye yeh app blocked hai."
+stopped:
+  en: "This step needs your confirmation, so I stopped."
+  te: "ఈ దశకు మీ అనుమతి కావాలి, అందుకే ఆపేశాను."
+  hi: "इस कदम के लिए आपकी अनुमति चाहिए, इसलिए रोक दिया।"
+  hinglish: "Is step ke liye aapki permission chahiye, isliye rok diya."
+confirm:
+  en: "Shall I go ahead? Say yes or no."
+  te: "ముందుకు వెళ్ళమంటారా? అవును లేదా కాదు అని చెప్పండి."
+  hi: "क्या आगे बढ़ें? हाँ या नहीं बोलिए।"
+  hinglish: "Aage badhein? Haan ya nahi boliye."
+cancelled:
+  en: "Okay, I cancelled it."
+  te: "సరే, రద్దు చేశాను."
+  hi: "ठीक है, रद्द कर दिया।"
+  hinglish: "Theek hai, cancel kar diya."
+blocked_contact:
+  en: "For privacy, only the test contacts can be called or messaged."
+  te: "గోప్యత కోసం టెస్ట్ కాంటాక్ట్‌లకు మాత్రమే కాల్ లేదా మెసేజ్ చేయగలను."
+  hi: "निजता के लिए सिर्फ़ टेस्ट कॉन्टैक्ट्स को ही कॉल या मैसेज किया जा सकता है।"
+  hinglish: "Privacy ke liye sirf test contacts ko hi call ya message kiya ja sakta hai."

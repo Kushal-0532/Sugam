@@ -1,0 +1,10 @@
+packages: [com.phonepe.app, com.google.android.apps.nbu.paisa.user, net.one97.paytm, in.org.npci.upiapp]
+regex: '(bank|upi|wallet|(?<!play)pay(?!store)|sbi|hdfc|icici|axis|kotak)'
+# Checked on the transcript before routing: payment apps and money transfer, plus WhatsApp by name (not supported: future work), in Latin/Telugu/Devanagari.
+text_regex: '(paytm|phone ?pe|g ?pay|google pay|bhim|upi|\bbank|wallet|money|paisa|paise|rupees?|₹|whats ?app|వాట్స|ट्स(ऐ|ए|अ)प|పేటీఎం|పేటిఎం|ఫోన్‌?పే|బ్యాంక్|డబ్బు|పైస|रुपय|पेटीएम|फोनपे|बैंक|पैस)'
+# Show the user's real contacts/messages/saved Wi-Fi names/browsing history: never driven by the LLM agent loop
+# (handlers only, no dumps/screenshots). Settings home shows the connected Wi-Fi name; Chrome reopens the last tab.
+private_packages: [com.google.android.contacts, com.google.android.dialer, com.google.android.apps.messaging,
+                   com.android.chrome, com.android.settings, com.spotify.music, com.whatsapp, com.whatsapp.w4b]
+# The only contacts call/message handlers may target (fake numbers, added by the user).
+test_contacts: [Test Amma, Test Papa]

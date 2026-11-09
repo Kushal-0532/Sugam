@@ -1,0 +1,6 @@
+# name -> package. Aliases are for the planner prompt (te/hi/en names).
+clock: {pkg: com.oneplus.deskclock, aliases: [alarm, ఘడియారం, అలారం, घड़ी, अलार्म]}
+youtube: {pkg: com.google.android.youtube, aliases: [యూట్యూబ్, यूट्यूब]}
+maps: {pkg: com.google.android.apps.maps, aliases: [మ్యాప్స్, मैप्स, नक्शा]}
+calculator: {pkg: com.oneplus.calculator, aliases: [కాలిక్యులేటర్, कैलकुलेटर]}
+# dialer/contacts/messages/settings/chrome are NOT here on purpose: they show private data (denylist.yaml private_packages)
